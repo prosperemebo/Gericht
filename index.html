@@ -18,44 +18,75 @@
     />
   </head>
   <body>
+    <nav class="navigation">
+      <a href="/" class="navigation__logo">
+        <img src="/assets/logo/logo-white.png" alt="Gerítch" />
+      </a>
+      <ul class="navigation__nav">
+        <li class="navigation__nav--nav">
+          <ul class="navigation__nav--items">
+            <li class="navigation__nav--item">
+              <a href="#">Home</a>
+            </li>
+            <li class="navigation__nav--item">
+              <a href="#">Pages</a>
+            </li>
+            <li class="navigation__nav--item">
+              <a href="#">Contact Us</a>
+            </li>
+            <li class="navigation__nav--item">
+              <a href="#">Blog</a>
+            </li>
+            <li class="navigation__nav--item">
+              <a href="#">Landing</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navigation__nav--nav">
+          <ul class="navigation__nav--actions">
+            <li class="navigation__nav--action">
+              <a href="#">Log In / Registration</a>
+            </li>
+            <li class="navigation__nav--action">
+              <a href="#">Book Table</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
     <header class="header">
-      <nav class="navigation">
-        <a href="/" class="navigation__logo">
-          <img src="/assets/logo/logo-white.png" alt="Gerítch" />
-        </a>
-        <ul class="navigation__nav">
-          <li class="navigation__nav--nav">
-            <ul class="navigation__nav--items">
-              <li class="navigation__nav--item">
-                <a href="#">Home</a>
-              </li>
-              <li class="navigation__nav--item">
-                <a href="#">Pages</a>
-              </li>
-              <li class="navigation__nav--item">
-                <a href="#">Contact Us</a>
-              </li>
-              <li class="navigation__nav--item">
-                <a href="#">Blog</a>
-              </li>
-              <li class="navigation__nav--item">
-                <a href="#">Landing</a>
-              </li>
-            </ul>
-          </li>
-          <li class="navigation__nav--nav">
-            <ul class="navigation__nav--actions">
-              <li class="navigation__nav--action">
-                <a href="#">Log In / Registration</a>
-              </li>
-              <li class="navigation__nav--action">
-                <a href="#">Book Table</a>
-              </li>
-            </ul>
-          </li>
+      <div class="header__wrapper">
+        <ul class="header__nav">
+          <li><a href="#">#Geritch</a></li>
+          <li><a href="#">#Bar</a></li>
         </ul>
-      </nav>
-      <div class="header__main"></div>
+        <div class="header__main container">
+          <div class="header__main--wrapper mb-big">
+            <div class="textbox">
+              <h3 class="heading-bold">Chase the new Flavour</h3>
+              <h1 class="heading-primary">The king to fine dining</h1>
+              <p class="paragraph">
+                Sit tellus lobortis sed senectus vivamus molestie. Condimentum
+                volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
+                aliquam amet tellus
+              </p>
+            </div>
+            <figure class="composition">
+              <img src="/assets/images/hero.png" alt="Salmon & Orange Slices" />
+            </figure>
+          </div>
+          <div class="header__main--pagination">
+            <span>01</span>
+            <span class="hyphen"></span>
+            <span>02</span>
+            <span>03</span>
+            <span>04</span>
+          </div>
+        </div>
+        <div class="header__scroll">
+          <span>Scroll</span>
+        </div>
+      </div>
     </header>
   </body>
 </html>
