@@ -30,6 +30,10 @@ body {
   line-height: 130%;
   letter-spacing: 0.04em;
   margin-bottom: 3.2rem;
+
+  @include respond(phone) {
+    line-height: 110%;
+  }
 }
 
 .heading-bold {
