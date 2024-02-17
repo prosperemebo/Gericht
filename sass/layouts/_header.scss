@@ -1,6 +1,7 @@
 .header {
-  padding: 5rem 12rem;
+  padding: 5rem 0;
   height: 100vh;
+  @include padCenter;
 
   &__wrapper {
     display: flex;
@@ -32,10 +33,16 @@
       .textbox {
         flex: 1;
         padding-right: 18rem;
+
+        svg {
+          color: $color-accent;
+          font-size: 2.5rem;
+          margin-top: .7rem;
+        }
       }
 
       .composition {
-        flex: 1.2;
+        flex: 1;
 
         img {
           width: 100%;
@@ -80,13 +87,13 @@
       height: 6rem;
       width: 1px;
       background-color: $color-accent;
-      margin-bottom: 2.4rem;
+      margin-bottom: 1.6rem;
     }
 
     span {
       color: $color-accent;
       text-transform: uppercase;
-      font-size: 2rem;
+      font-size: 1.6rem;
       font-weight: 700;
       line-height: 175%;
       letter-spacing: 0.04em;
