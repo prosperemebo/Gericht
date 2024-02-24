@@ -36,7 +36,6 @@ body {
   }
 }
 
-
 .heading-secondary {
   font-size: 6rem;
   font-family: $secondary-font;
@@ -67,4 +66,12 @@ body {
   letter-spacing: 0.04em;
   font-weight: 400;
   color: $color-grey-1;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 175%;
+  letter-spacing: 4%;
+  font-family: $secondary-font;
 }
