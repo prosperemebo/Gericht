@@ -36,6 +36,22 @@ body {
   }
 }
 
+
+.heading-secondary {
+  font-size: 6rem;
+  font-family: $secondary-font;
+  font-weight: 700;
+  color: $color-accent;
+  text-transform: capitalize;
+  line-height: 1em;
+  letter-spacing: 0.03em;
+  margin-bottom: 1rem;
+
+  @include respond(phone) {
+    line-height: 110%;
+  }
+}
+
 .heading-bold {
   font-family: $secondary-font;
   font-size: 2rem;
