@@ -22,6 +22,10 @@
     position: fixed;
     right: 6vw;
 
+    @include respond(tab-port) {
+      right: 3vw;
+    }
+
     .navigation__button--icon {
       background-color: transparent;
       height: 0;
@@ -51,7 +55,7 @@
     transition-property: background-color, height;
     display: none;
     position: relative;
-    z-index: 10;
+    z-index: 101;
 
     @include respond(tab-land) {
       display: flex;
@@ -104,6 +108,7 @@
       width: min(40rem, 95%);
       right: -40rem;
       transition: right 300ms ease;
+      z-index: 100;
     }
 
     li a {
