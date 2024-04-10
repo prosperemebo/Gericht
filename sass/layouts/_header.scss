@@ -1,6 +1,6 @@
 .header {
   padding: 5rem 0;
-  height: 100vh;
+  min-height: 100vh;
   @include padCenter;
 
   &__wrapper {
@@ -44,6 +44,7 @@
 
         @include respond(big-phone) {
           padding-right: 0;
+          margin-bottom: 5rem;
         }
 
         svg {

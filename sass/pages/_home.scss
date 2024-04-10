@@ -3,15 +3,21 @@ section.about {
   background-size: cover;
   background-position: center;
   position: relative;
-  min-height: 90vh;
   padding: 10rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20rem;
+  width: 100%;
+  overflow: hidden;
 
   .backdrop {
     height: 50%;
     @include absCenter;
+
+    @include respond(big-phone) {
+      opacity: 0.3;
+    }
 
     img {
       height: 100%;
@@ -27,15 +33,37 @@ section.about {
     align-items: center;
     @include padCenter;
 
+    @include respond(big-phone) {
+      flex-direction: column;
+      text-align: center;
+    }
+
     .textbox {
       &.right {
         text-align: right;
+      }
+
+      @include respond(big-phone) {
+        text-align: center;
+        margin-bottom: 15rem;
+
+        &:last-child {
+          margin-bottom: 7.5rem;
+        }
+
+        &.right {
+          text-align: center;
+        }
       }
 
       svg {
         color: $color-accent;
         font-size: 2rem;
         margin-bottom: 3.2rem;
+
+        @include respond(big-phone) {
+          margin-bottom: 1rem;
+        }
 
         &.left {
           transform: rotate(-180deg);
@@ -46,6 +74,14 @@ section.about {
     .composition {
       margin: 0 8rem;
       height: 80vh;
+
+      @include respond(tab-land) {
+        margin: 0 4rem;
+      }
+
+      @include respond(big-phone) {
+        order: 1;
+      }
 
       img {
         height: 100%;
