@@ -55,3 +55,23 @@ section.about {
     }
   }
 }
+
+
+.reservation {
+  &__content {
+    color: $color-white;
+    width: 120rem;
+    height: 45rem;
+    margin: 0 auto;
+    background-color: $accent-bacground;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 4.8rem 3.2rem;
+    border: 1px solid $border-color;
+
+
+  }
+
+  margin: 15.2rem 0 18rem;
+}

@@ -75,3 +75,23 @@ body {
   letter-spacing: 4%;
   font-family: $secondary-font;
 }
+
+.header-tertiary {
+  font-size: 6.4rem;
+  font-family: $secondary-font;
+  font-weight: 600;
+  color: $color-accent;
+  text-transform: capitalize;
+  line-height: 1em;
+  letter-spacing: 4%;
+
+}
+
+.sm-text {
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 3%;
+  font-family: $secondary-font;
+
+}
