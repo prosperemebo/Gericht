@@ -254,14 +254,14 @@ section.about {
 
           .line {
 
-            width: 11rem;
+            width: 9rem;
             margin-top: 5px;
             position: absolute;
-            left: 50%;
+            left: 55%;
+
 
             @include respond (big-phone) {
               width: 8rem;
-
             }
 
             img {
@@ -302,6 +302,60 @@ section.about {
       width: 12rem;
       height: 12rem;
       right: 10rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.section__video {
+  width: 100vw;
+  height: 90dvh;
+  position: relative;
+
+  &--bg-image {
+    width: 100%;
+    object-position: center;
+    object-fit: contain;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &--play-btn {
+    height: 12rem;
+    width: 12rem;
+
+    @include respond (sm-laptop) {
+      height: 8rem;
+      width: 8rem;
+    }
+
+    @include absCenter;
+    // top: 33.2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .spoon {
+    width: 14.6rem;
+    height: 14.6rem;
+    position: absolute;
+
+    top: 14rem;
+    left: 19rem;
+
+
+    @include respond(sm-laptop) {
+      width: 12rem;
+      height: 12rem;
+      left: 10rem;
+      top: 10rem;
     }
 
     img {
