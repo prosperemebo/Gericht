@@ -116,11 +116,21 @@ section.about {
       height: auto;
     }
 
+    @include respond (tab-port) {
+      margin: 0 5rem;
+
+
+    }
+
     .form {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 3.2rem;
 
+      @include respond (big-phone) {
+        grid-template-columns: repeat(1, 1fr);
+
+      }
 
       width: 100%;
 
@@ -150,6 +160,142 @@ section.about {
 
     top: -3rem;
     right: 15.1rem;
+
+
+    @include respond(sm-laptop) {
+      width: 12rem;
+      height: 12rem;
+      right: 10rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+.section-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    color: $color-white;
+    width: 130rem;
+    height: 45rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 6.4rem;
+
+    @include respond (big-phone) {
+      gap: 4rem;
+
+    }
+
+    @include respond(sm-laptop) {
+      width: 100rem;
+      height: auto;
+    }
+
+    &--main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      // justify-items: center;
+      gap: 3.2rem;
+
+      @include respond (tab-port) {
+        grid-template-columns: repeat(2, 1fr);
+
+        .span {
+          grid-column: span 2;
+        }
+
+      }
+
+      @include respond (big-phone) {
+        grid-template-columns: repeat(1, 1fr);
+
+        .span {
+          grid-column: span 1;
+        }
+      }
+
+      .box {
+        padding: 3.2rem 0;
+        width: 100%;
+
+        @include respond (tab-port) {
+          margin: 0 auto;
+          width: 80%;
+        }
+
+        @include respond (big-phone) {
+          padding: 0 0 3.2rem;
+
+        }
+
+        .menu {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+
+          // gap: 3.2rem;
+          margin-bottom: 2rem;
+
+          .no-pad-bot {
+            margin-bottom: 0;
+
+          }
+
+          position: relative;
+
+          .line {
+
+            width: 11rem;
+            margin-top: 5px;
+            position: absolute;
+            left: 50%;
+
+            @include respond (big-phone) {
+              width: 8rem;
+
+            }
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+      }
+
+      .bg-img {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+
+      }
+    }
+
+  }
+
+  position: relative;
+
+  padding: 15.2rem 0 18rem;
+
+
+  .spoon {
+    width: 14.6rem;
+    height: 14.6rem;
+    position: absolute;
+
+    top: -3rem;
+    left: 15.1rem;
 
 
     @include respond(sm-laptop) {
