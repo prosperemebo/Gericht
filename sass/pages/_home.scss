@@ -286,7 +286,7 @@ section.about {
 
   position: relative;
 
-  padding: 15.2rem 0 18rem;
+  margin: 15.2rem 0 18rem;
 
 
   .spoon {
@@ -312,13 +312,13 @@ section.about {
 
 .section__video {
   width: 100vw;
-  height: 90dvh;
   position: relative;
 
   &--bg-image {
     width: 100%;
     object-position: center;
     object-fit: contain;
+    display: block;
 
     img {
       width: 100%;
@@ -360,6 +360,96 @@ section.about {
 
     img {
       width: 100%;
+    }
+  }
+}
+
+
+.section__awards {
+  width: 100vw;
+  // height: 100%;
+  background-image: url('/assets/images/bg-1.jpg');
+
+  padding: 12.8rem 0;
+
+  &--content {
+    height: 69rem;
+    width: 130rem;
+    display: grid;
+    grid-template-columns: 1.3fr .7fr;
+    margin: 0 auto;
+    align-items: center;
+    gap: 11.1rem;
+
+    @include respond (sm-laptop) {
+      width: 120rem;
+      height: 65rem;
+      gap: 9rem;
+    }
+
+    @include respond (tab-land) {
+      grid-template-columns: 1fr;
+
+      gap: 5rem;
+    }
+
+    .content__textbox {
+      // width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      &--main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3.2rem;
+        row-gap: 6.4rem;
+        margin-top: 6.4rem;
+
+        .box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          gap: 3.2rem;
+
+          .text {
+            flex: 1;
+
+            .grid-text {
+              margin-bottom: .8rem;
+            }
+          }
+
+          figure.awards {
+            width: 8rem;
+            height: 8rem;
+
+            img {
+              width: 100%;
+            }
+          }
+
+        }
+
+      }
+
+    }
+
+    figure.composition {
+      width: 100%;
+      height: 69rem;
+      object-fit: contain;
+
+      @include respond (sm-laptop) {
+        height: 55rem;
+      }
+
+      img {
+        height: 100%;
+      }
     }
   }
 }
