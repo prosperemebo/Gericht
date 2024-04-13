@@ -91,3 +91,101 @@ section.about {
     }
   }
 }
+
+.notes {
+  background-image: url(/assets/images/bg-1.jpg);
+  height: 95vh;
+  padding: 12rem 18rem;
+  @include respond(tab-land) {
+    padding: 16rem 1rem;
+  }
+  @include respond(tab-port) {
+    height: 165vh;
+    padding: 16rem 18rem;
+  }
+  @include respond(phone) {
+    height: 165vh;
+    padding: 10rem 0rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+    .composition {
+      flex: 1;
+      height: 100rem;
+      width: 90rem;
+      @include respond(tab-land) {
+        height: 50rem;
+        width: 60rem;
+        img {
+          width: 100%;
+        }
+      }
+      @include respond(tab-port) {
+        margin: 0 auto;
+      }
+      @include respond(big-phone) {
+        height: 70rem;
+        width: 60rem;
+        margin: 0 auto;
+      }
+      @include respond(phone) {
+        padding-top: 4rem;
+        height: 30rem;
+        width: 40rem;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      flex: 1;
+      margin-top: 9rem;
+      @include respond(tab-port) {
+        padding: 1rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+      }
+      h1 {
+        font-size: 6rem;
+        font-family: $secondary-font !important;
+      }
+      svg {
+        color: $color-accent;
+        font-size: 1.5rem;
+      }
+      h3 {
+        margin-bottom: 1rem;
+        font-family: $secondary-font !important;
+      }
+      span {
+        svg {
+          color: $color-accent;
+          font-size: 2rem;
+          margin-top: 0.7rem;
+        }
+      }
+      p {
+        margin-bottom: 6rem;
+      }
+      .host-text {
+        h3 {
+          margin-bottom: 1rem;
+          font-family: $secondary-font !important;
+          font-size: 3rem;
+          font-weight: 400;
+          color: $color-accent;
+        }
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 5rem;
+        }
+      }
+    }
+  }
+}
