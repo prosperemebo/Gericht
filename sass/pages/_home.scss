@@ -243,12 +243,18 @@ section.about {
           justify-content: space-between;
 
           // gap: 3.2rem;
-          margin-bottom: 2rem;
+          margin-bottom: 4rem;
+
+          @include respond (sm-laptop) {
+            margin-bottom: 2rem;
+          }
 
           .no-pad-bot {
             margin-bottom: 0;
 
           }
+
+
 
           position: relative;
 
