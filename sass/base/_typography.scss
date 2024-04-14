@@ -66,11 +66,15 @@ body {
 }
 
 .paragraph {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 175%;
   letter-spacing: 0.04em;
   font-weight: 400;
   color: $color-grey-1;
+
+  @include respond (sm-laptop) {
+    font-size: 1.4rem;
+  }
 }
 
 .btn {
