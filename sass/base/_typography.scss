@@ -51,11 +51,6 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 1rem;
 
-  @include respond(sm-laptop) {
-    font-size: 5.4rem;
-
-  }
-
   @include respond(phone) {
     line-height: 110%;
   }
@@ -71,15 +66,11 @@ body {
 }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 175%;
   letter-spacing: 0.04em;
   font-weight: 400;
   color: $color-grey-1;
-
-  @include respond (sm-laptop) {
-    font-size: 1.4rem;
-  }
 }
 
 .btn {
@@ -89,69 +80,7 @@ body {
   letter-spacing: 4%;
   font-family: $secondary-font;
 }
-
-.header-tertiary {
-  font-size: 6.4rem;
-  font-family: $secondary-font;
-  font-weight: 600;
-  color: $color-accent;
-  text-transform: capitalize;
-  line-height: 1em;
-  letter-spacing: 4%;
-
-  @include respond (big-phone) {
-    font-size: 4rem;
-    text-align: center;
-
-  }
-
-}
-
-.sm-text {
-  font-size: 2.3rem;
-  font-weight: 400;
-  line-height: 130%;
-  letter-spacing: 3%;
-  font-family: $secondary-font;
-
-}
-
-.input::placeholder {
-  font-family: $secondary-font;
-  color: $color-grey-1;
-
-
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 130%;
-  position: relative;
-  letter-spacing: 4%;
-
-  background-image: url(/assets/icons/arrow.png);
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 2.4rem;
-
-}
-
-.grid-header {
-  font-family: $secondary-font;
-
-  font-size: 4.5rem;
-  font-weight: 600;
-  line-height: 130%;
-
-  letter-spacing: 4%;
-  margin-bottom: 4.8rem;
-  text-align: center;
-}
-
-.grid-text {
-  font-weight: 700;
-  letter-spacing: 4%;
-  color: $color-accent;
-
-}.sign{
+.sign{
   font-size: 5rem;
   font-family: $tertiary-font;
   letter-spacing: .3rem;
