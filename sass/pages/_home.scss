@@ -367,10 +367,11 @@ section.about {
 
 .section__awards {
   width: 100vw;
-  // height: 100%;
+  height: auto;
   background-image: url('/assets/images/bg-1.jpg');
 
   padding: 12.8rem 0;
+  overflow-x: hidden;
 
   &--content {
     height: 69rem;
@@ -388,10 +389,21 @@ section.about {
     }
 
     @include respond (tab-land) {
+      width: 90rem;
+      gap: 5rem;
+
+    }
+
+    @include respond (tab-port) {
+      width: 90rem;
+      margin: 0 auto;
       grid-template-columns: 1fr;
 
-      gap: 5rem;
+      height: auto;
     }
+
+
+    
 
     .content__textbox {
       // width: 100%;
@@ -400,13 +412,24 @@ section.about {
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
+      @include respond (big-phone) {
+  align-items: center;
+      }
 
       &--main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 3.2rem;
         row-gap: 6.4rem;
-        margin-top: 6.4rem;
+        margin: 6.4rem auto 0;
+
+        @include respond (big-phone) {
+          column-gap: 1.2rem;
+          row-gap: 3.4rem;
+          margin: 3.4rem auto 0;
+          grid-template-columns: repeat(1, 1fr);
+          margin: 0 !important;
+        }
 
         .box {
           display: flex;
@@ -415,8 +438,16 @@ section.about {
           width: 100%;
           gap: 3.2rem;
 
+          @include respond (big-phone) {
+            flex-direction: column;
+          }
+
           .text {
             flex: 1;
+
+            @include respond (big-phone) {
+              text-align: center;
+            }
 
             .grid-text {
               margin-bottom: .8rem;
@@ -445,6 +476,12 @@ section.about {
 
       @include respond (sm-laptop) {
         height: 55rem;
+      }
+
+      @include respond (big-phone) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
       }
 
       img {
