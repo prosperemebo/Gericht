@@ -46,6 +46,11 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 1rem;
 
+  @include respond(sm-laptop) {
+    font-size: 5.4rem;
+
+  }
+
   @include respond(phone) {
     line-height: 110%;
   }
@@ -85,6 +90,11 @@ body {
   line-height: 1em;
   letter-spacing: 4%;
 
+  @include respond (big-phone) {
+    font-size: 4.8rem;
+
+  }
+
 }
 
 .sm-text {
@@ -93,5 +103,23 @@ body {
   line-height: 130%;
   letter-spacing: 3%;
   font-family: $secondary-font;
+
+}
+
+.input::placeholder {
+  font-family: $secondary-font;
+  color: $color-grey-1;
+
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 130%;
+  position: relative;
+  letter-spacing: 4%;
+
+  background-image: url(/assets/icons/arrow.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 2.4rem;
 
 }
