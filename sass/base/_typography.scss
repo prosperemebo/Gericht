@@ -71,6 +71,7 @@ body {
   letter-spacing: 0.04em;
   font-weight: 400;
   color: $color-grey-1;
+  font-family: $primary-font;
 
   @include respond (sm-laptop) {
     font-size: 1.4rem;

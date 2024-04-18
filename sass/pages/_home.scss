@@ -316,3 +316,12 @@ section.about {
     }
   }
 }
+
+
+.footer{
+  padding-top: 11.3rem;
+  @include respond (sm-laptop){
+    padding: 9rem;
+  }
+
+}
