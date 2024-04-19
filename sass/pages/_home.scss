@@ -187,7 +187,7 @@ section.about {
     margin: 0 auto;
     display: flex;
     align-items: center;
-  
+
     flex-direction: column;
     gap: 6.4rem;
 
@@ -318,10 +318,226 @@ section.about {
 }
 
 
-.footer{
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding-top: 11.3rem;
-  @include respond (sm-laptop){
-    padding: 9rem;
+
+
+  @include respond (sm-laptop) {
+    padding-top: 9rem;
   }
 
+  @include respond (phone) {
+    padding: 9rem 3rem;
+  }
+
+  &__form {
+
+    padding: 6.4rem 25.4rem;
+    border: 1px solid $border-color;
+    background-color: $accent-bacground;
+
+
+    .text-box {
+      color: $color-white;
+      margin-bottom: 6.4rem;
+
+      @include respond (tab-land) {
+        h2 {
+          text-align: center;
+
+        }
+
+
+      }
+
+      p {
+        margin-top: 2.4rem;
+        text-align: center;
+      }
+    }
+
+    @include respond (sm-laptop) {
+      padding: 4.8rem 10rem;
+
+    }
+
+    @include respond (tab-land) {
+      padding: 4.8rem 5rem;
+
+
+    }
+
+    @include respond (tab-port) {
+      padding: 4.8rem 5rem;
+
+    }
+
+    @include respond (big-desktop) {
+      padding: 4.8rem 25rem;
+
+    }
+
+    @include respond (phone) {
+      padding: 4.8rem 2rem;
+
+    }
+
+    .form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+      @include respond (phone) {
+        flex-direction: column;
+        gap: 4rem;
+
+
+      }
+
+      &--input {
+        background-color: transparent;
+        border: 1px solid $input-border-color;
+        padding: 1.6rem;
+        flex: 1;
+        margin-right: 3.2rem;
+
+        @include respond (phone) {
+
+          margin-right: 0;
+
+
+        }
+
+        &::placeholder {
+          color: $color-grey-1;
+          font-family: $secondary-font;
+        }
+
+      }
+
+
+    }
+
+    margin-bottom: -22rem;
+    z-index: 2;
+
+    @include respond (sm-laptop) {
+      margin-bottom: -20em;
+
+
+    }
+
+  }
+
+  position: relative;
+
+  .spoon {
+    width: 14.6rem;
+    height: 14.6rem;
+    position: absolute;
+
+    top: -6rem;
+    left: 10.1rem;
+
+
+    @include respond(sm-laptop) {
+      width: 12rem;
+      height: 12rem;
+      top: -5rem;
+      left: 6.1rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__main {
+    background-image: url('/assets/images/bg-1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    padding-bottom: 14rem;
+
+    @include respond (sm-laptop) {
+      padding-bottom: 5rem;
+
+
+
+
+    }
+
+
+    &--content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: auto 0 6.4rem;
+
+
+
+      .box {
+        color: $color-white;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .span-1 {
+          margin-bottom: .8rem;
+        }
+      }
+
+      .box-2 {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+          margin-bottom: 3.2rem;
+          font-size: 6.4rem;
+          text-align: center;
+        }
+
+        .icon {
+          margin: 1.6rem 0;
+          color: $color-accent;
+        }
+
+        .social--icons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1.6rem;
+
+        }
+
+
+
+      }
+
+    }
+
+
+    .copyright {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
