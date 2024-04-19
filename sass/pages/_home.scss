@@ -376,6 +376,9 @@ section.about {
   width: 100vw;
   height: auto;
   background-image: url('/assets/images/bg-1.jpg');
+  background-size: cover;
+  background-position: center;
+  display: block;
 
   padding: 12.8rem 0;
   overflow-x: hidden;
