@@ -47,3 +47,15 @@
     margin-bottom: .8rem;
   }
 }
+
+.text-box-left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  svg {
+    margin-bottom: .8rem;
+  }
+
+  
+}

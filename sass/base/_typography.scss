@@ -148,3 +148,20 @@ body {
   color: $color-accent;
 
 }
+
+.sm-txt {
+  font-family: $primary-font;
+  color: $color-grey-1;
+
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 4%;
+
+  @include respond (big-phone){
+font-size: 2rem;
+text-align: center;
+  }
+
+}

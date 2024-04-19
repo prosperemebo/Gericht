@@ -187,7 +187,7 @@ section.about {
     margin: 0 auto;
     display: flex;
     align-items: center;
-  
+
     flex-direction: column;
     gap: 6.4rem;
 
@@ -261,14 +261,14 @@ section.about {
 
           .line {
 
-            width: 11rem;
+            width: 9rem;
             margin-top: 5px;
             position: absolute;
-            left: 50%;
+            left: 55%;
+
 
             @include respond (big-phone) {
               width: 8rem;
-
             }
 
             img {
@@ -293,7 +293,7 @@ section.about {
 
   position: relative;
 
-  padding: 15.2rem 0 18rem;
+  margin: 15.2rem 0 18rem;
 
 
   .spoon {
@@ -317,11 +317,184 @@ section.about {
   }
 }
 
+.section__video {
+  width: 100vw;
+  position: relative;
 
-.footer{
-  padding-top: 11.3rem;
-  @include respond (sm-laptop){
-    padding: 9rem;
+  &--bg-image {
+    width: 100%;
+    object-position: center;
+    object-fit: contain;
+    display: block;
+
+    img {
+      width: 100%;
+    }
   }
 
+  &--play-btn {
+    height: 12rem;
+    width: 12rem;
+
+    @include respond (sm-laptop) {
+      height: 8rem;
+      width: 8rem;
+    }
+
+    @include absCenter;
+    // top: 33.2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .spoon {
+    width: 14.6rem;
+    height: 14.6rem;
+    position: absolute;
+
+    top: 14rem;
+    left: 19rem;
+
+
+    @include respond(sm-laptop) {
+      width: 12rem;
+      height: 12rem;
+      left: 10rem;
+      top: 10rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+.section__awards {
+  width: 100vw;
+  height: auto;
+  background-image: url('/assets/images/bg-1.jpg');
+
+  padding: 12.8rem 0;
+  overflow-x: hidden;
+
+  &--content {
+    height: 69rem;
+    width: 130rem;
+    display: grid;
+    grid-template-columns: 1.3fr .7fr;
+    margin: 0 auto;
+    align-items: center;
+    gap: 11.1rem;
+
+    @include respond (sm-laptop) {
+      width: 120rem;
+      height: 65rem;
+      gap: 9rem;
+    }
+
+    @include respond (tab-land) {
+      width: 90rem;
+      gap: 5rem;
+
+    }
+
+    @include respond (tab-port) {
+      width: 90rem;
+      margin: 0 auto;
+      grid-template-columns: 1fr;
+
+      height: auto;
+    }
+
+
+
+
+    .content__textbox {
+      // width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      @include respond (big-phone) {
+        align-items: center;
+      }
+
+      &--main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3.2rem;
+        row-gap: 6.4rem;
+        margin: 6.4rem auto 0;
+
+        @include respond (big-phone) {
+          column-gap: 1.2rem;
+          row-gap: 3.4rem;
+          margin: 3.4rem auto 0;
+          grid-template-columns: repeat(1, 1fr);
+          margin: 0 !important;
+        }
+
+        .box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          gap: 3.2rem;
+
+          @include respond (big-phone) {
+            flex-direction: column;
+          }
+
+          .text {
+            flex: 1;
+
+            @include respond (big-phone) {
+              text-align: center;
+            }
+
+            .grid-text {
+              margin-bottom: .8rem;
+            }
+          }
+
+          figure.awards {
+            width: 8rem;
+            height: 8rem;
+
+            img {
+              width: 100%;
+            }
+          }
+
+        }
+
+      }
+
+    }
+
+    figure.composition {
+      width: 100%;
+      height: 69rem;
+      object-fit: contain;
+
+      @include respond (sm-laptop) {
+        height: 55rem;
+      }
+
+      @include respond (big-phone) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+  }
 }
