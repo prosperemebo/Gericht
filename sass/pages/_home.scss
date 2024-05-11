@@ -183,7 +183,7 @@ section.about {
   &__content {
     color: $color-white;
     width: 130rem;
-    height: 45rem;
+    min-height: 45rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
